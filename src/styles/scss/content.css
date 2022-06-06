@@ -1,0 +1,102 @@
+.content-title {
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 39px;
+  letter-spacing: 0.01em;
+  color: #000000;
+  margin-bottom: 35px;
+}
+.content-list {
+  display: grid;
+  grid-gap: 65px 35px;
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.card-img {
+  display: block;
+  margin: 0 auto 11px 18px;
+}
+.card-name {
+  font-weight: 800;
+  font-size: 20px;
+  line-height: 24px;
+  letter-spacing: 0.01em;
+  color: #000000;
+  text-align: center;
+  display: block;
+  margin-bottom: 22px;
+}
+.card-options {
+  background: #F3F3F3;
+  border-radius: 10px;
+  padding: 7px;
+  margin-bottom: 17px;
+}
+.card-options__pizza {
+  display: flex;
+  justify-content: space-around;
+}
+.card-options__pizza:first-child {
+  margin-bottom: 7px;
+}
+.card-options__btn {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 17px;
+  text-align: center;
+  letter-spacing: 0.015em;
+  color: #2C2C2C;
+  padding: 11px 0;
+  flex: 50%;
+}
+.card-options__btn--active {
+  background: #FFFFFF;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.04);
+  border-radius: 5px;
+}
+.card-options-buy {
+  display: flex;
+  justify-content: space-between;
+}
+.card-options-buy__price {
+  font-weight: 700;
+  font-size: 22px;
+  line-height: 27px;
+  letter-spacing: 0.015em;
+  color: #000000;
+  margin-right: 15px;
+}
+.card-options-buy__add-btn {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 19px;
+  color: #EB5A1E;
+  position: relative;
+  padding: 13px 33px;
+  background: #FFFFFF;
+  border: 1px solid #EB5A1E;
+  border-radius: 30px;
+}
+.card-options-buy__add-btn::before {
+  content: "";
+  position: absolute;
+  width: 12px;
+  height: 12px;
+  background: url("../../img/icons/plus.svg");
+  top: 50%;
+  transform: translateY(-50%);
+  left: 13px;
+}
+.card-options-buy__add-number {
+  font-weight: 700;
+  font-size: 13px;
+  line-height: 16px;
+  color: #FFFFFF;
+  background: #EB5A1E;
+  border-radius: 50%;
+  padding: 3px 7px;
+  position: absolute;
+  right: 7px;
+}
+
+/*# sourceMappingURL=content.css.map */
