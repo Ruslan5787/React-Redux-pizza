@@ -1,0 +1,39 @@
+.categories-menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 32px;
+}
+.categories-menu__right {
+  position: relative;
+}
+.categories-types-pizza {
+  margin-right: 25px;
+  max-width: 950px;
+}
+.categories-types-pizza-btn {
+  font-weight: 700;
+  text-align: center;
+  letter-spacing: 0.015em;
+  color: #2c2c2c;
+  padding: 14px 34px;
+  background: #f9f9f9;
+  border-radius: 30px;
+  transition: all 0.3s;
+}
+.categories-types-pizza-btn:not(:last-child) {
+  margin-right: 9px;
+}
+.categories-types-pizza-btn:nth-child(7n) {
+  margin-top: 10px;
+}
+.categories-types-pizza-btn:hover {
+  background: #282828;
+  color: #fff;
+}
+.categories-btn--active {
+  background: #282828;
+  color: #fff;
+}
+
+/*# sourceMappingURL=categories.css.map */

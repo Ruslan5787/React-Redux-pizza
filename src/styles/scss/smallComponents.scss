@@ -1,0 +1,28 @@
+.modal {
+  position: absolute;
+  right: 0;
+  top: 30px;
+
+  background: #ffffff;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.09);
+  border-radius: 10px;
+  padding: 13px 0;
+
+  &-options {
+    padding: 10px 14px;
+    display: block;
+    cursor: pointer;
+    transition: all .2s;
+
+    &--active {
+      font-weight: 700;
+      color: #fe5f1e;
+      background: rgba(254, 95, 30, 0.05);
+    }
+
+    &:hover {
+      color: #fe5f1e;
+      font-weight: 700;
+    }
+  }
+}

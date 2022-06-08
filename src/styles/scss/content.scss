@@ -1,5 +1,4 @@
 .content {
-
   &-title {
     font-weight: 700;
     font-size: 32px;
@@ -37,7 +36,7 @@
   }
 
   &-options {
-    background: #F3F3F3;
+    background: #f3f3f3;
     border-radius: 10px;
     padding: 7px;
     margin-bottom: 17px;
@@ -57,13 +56,13 @@
       line-height: 17px;
       text-align: center;
       letter-spacing: 0.015em;
-      color: #2C2C2C;
+      color: #2c2c2c;
 
       padding: 11px 0;
       flex: 50%;
 
       &--active {
-        background: #FFFFFF;
+        background: #ffffff;
         box-shadow: 0 2px 4px rgba(0, 0, 0, 0.04);
         border-radius: 5px;
       }
@@ -88,16 +87,16 @@
           font-weight: 700;
           font-size: 16px;
           line-height: 19px;
-          color: #EB5A1E;
+          color: #eb5a1e;
 
           position: relative;
           padding: 13px 33px;
-          background: #FFFFFF;
-          border: 1px solid #EB5A1E;
+          background: #ffffff;
+          border: 1px solid #eb5a1e;
           border-radius: 30px;
 
           &::before {
-            content: '';
+            content: "";
             position: absolute;
             width: 12px;
             height: 12px;
@@ -109,12 +108,13 @@
         }
 
         &-number {
+          font-family: "Roboto", serif;
           font-weight: 700;
           font-size: 13px;
           line-height: 16px;
-          color: #FFFFFF;
+          color: #ffffff;
 
-          background: #EB5A1E;
+          background: #eb5a1e;
           border-radius: 50%;
           padding: 3px 7px;
           position: absolute;

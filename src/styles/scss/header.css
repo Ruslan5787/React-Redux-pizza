@@ -11,7 +11,7 @@
   height: 1px;
   width: 100%;
   top: 88px;
-  background: #F7F7F7;
+  background: #f7f7f7;
 }
 
 .logo {
@@ -30,17 +30,17 @@
   color: #181818;
 }
 .logo-text__subtitle {
-  color: #7B7B7B;
+  color: #7b7b7b;
 }
 
 .shopping-cart {
-  background: #FE5F1E;
+  background: #fe5f1e;
   border-radius: 30px;
   padding: 15px 23px;
   font-weight: 700;
   font-size: 16px;
   line-height: 19px;
-  color: #FFFFFF;
+  color: #ffffff;
 }
 .shopping-cart-price {
   padding-right: 13px;

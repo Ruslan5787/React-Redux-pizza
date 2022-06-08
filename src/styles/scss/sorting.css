@@ -1,76 +1,24 @@
 .sorting {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin-bottom: 32px;
-}
-.sorting-types-pizza {
-  margin-right: 25px;
-  max-width: 950px;
-}
-.sorting-types-pizza-btn {
-  font-weight: 700;
-  text-align: center;
-  letter-spacing: 0.015em;
-  color: #2C2C2C;
-  padding: 14px 34px;
-  background: #F9F9F9;
-  border-radius: 30px;
-  transition: all 0.3s;
-}
-.sorting-types-pizza-btn:not(:last-child) {
-  margin-right: 9px;
-}
-.sorting-types-pizza-btn:nth-child(7n) {
-  margin-top: 10px;
-}
-.sorting-types-pizza-btn:hover {
-  background: rgb(206, 206, 206);
-}
-.sorting-btn--active {
-  background: #282828;
-  color: #fff;
-}
-.sorting-sort {
   align-items: center;
   cursor: pointer;
 }
-.sorting-sort-img {
+.sorting-img {
   margin-right: 5px;
 }
-.sorting-sort-text {
+.sorting-text {
   font-weight: 700;
   font-size: 14px;
   line-height: 17px;
   letter-spacing: 0.015em;
-  color: #2C2C2C;
+  color: #2c2c2c;
   margin-right: 8px;
 }
-.sorting-sort-options {
+.sorting-options {
   font-size: 14px;
   line-height: 17px;
   letter-spacing: 0.015em;
-  color: #FE5F1E;
-  border-bottom: 1px dashed #FE5F1E;
-}
-.sorting-modal {
-  position: absolute;
-  top: 274px;
-  right: 345px;
-  background: #FFFFFF;
-  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.09);
-  border-radius: 10px;
-  padding: 13px 0;
-}
-.sorting-modal-options {
-  padding: 10px 14px;
-  display: block;
-  cursor: pointer;
-}
-.sorting-modal-options--active {
-  font-weight: 700;
-  color: #FE5F1E;
-  background: rgba(254, 95, 30, 0.05);
+  color: #fe5f1e;
+  border-bottom: 1px dashed #fe5f1e;
 }
 
 /*# sourceMappingURL=sorting.css.map */
