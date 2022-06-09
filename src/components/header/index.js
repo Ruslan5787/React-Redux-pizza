@@ -1,4 +1,4 @@
 import { Logo } from "./Logo";
-import { ShoppingCart } from "./ShoppingCart";
+import { ShoppingCartBtn } from "./ShoppingCartBtn";
 
-export { Logo, ShoppingCart };
+export { Logo, ShoppingCartBtn };

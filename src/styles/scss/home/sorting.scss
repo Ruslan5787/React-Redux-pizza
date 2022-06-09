@@ -1,9 +1,14 @@
 .sorting {
   align-items: center;
   cursor: pointer;
+  font-family: 'Roboto', sans-serif;
 
   &-img {
     margin-right: 5px;
+
+    &.rotated {
+      transform: rotate(180deg);
+    }
   }
 
   &-text {

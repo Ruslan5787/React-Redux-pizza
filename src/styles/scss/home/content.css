@@ -15,6 +15,7 @@
 .card-img {
   display: block;
   margin: 0 auto 11px 18px;
+  width: 260px;
 }
 .card-name {
   font-weight: 800;
@@ -40,6 +41,7 @@
   margin-bottom: 7px;
 }
 .card-options__btn {
+  font-family: "Roboto", sans-serif;
   font-weight: 700;
   font-size: 14px;
   line-height: 17px;
@@ -49,10 +51,15 @@
   padding: 11px 0;
   flex: 50%;
 }
-.card-options__btn--active {
+.card-options__btn.active {
   background: #ffffff;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.04);
   border-radius: 5px;
+}
+.card-options__btn.absent {
+  cursor: default;
+  opacity: 0.6;
+  pointer-events: none;
 }
 .card-options-buy {
   display: flex;
@@ -67,6 +74,7 @@
   margin-right: 15px;
 }
 .card-options-buy__add-btn {
+  font-family: "Roboto", sans-serif;
   font-weight: 700;
   font-size: 16px;
   line-height: 19px;
@@ -82,13 +90,13 @@
   position: absolute;
   width: 12px;
   height: 12px;
-  background: url("../../img/icons/plus.svg");
+  background: url("../../../img/main/icons/plus.svg");
   top: 50%;
   transform: translateY(-50%);
   left: 13px;
 }
 .card-options-buy__add-number {
-  font-family: "Roboto", serif;
+  font-family: "Roboto", sans-serif;
   font-weight: 700;
   font-size: 13px;
   line-height: 16px;

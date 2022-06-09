@@ -1,17 +1,21 @@
 import React from "react";
+import { Routes, Route } from "react-router-dom";
 
 import "./styles/scss/main.scss";
 
-import { Header, CategoriesMenu, Content } from "./components";
+import { Layout } from "./components/Layout";
+import { Home } from "./pages/Home";
+import { Cart } from "./pages/Cart";
 
 export function App() {
   return (
-    <div className="main">
-      <div className="container">
-        <Header />
-        <CategoriesMenu />
-        <Content />
-      </div>
-    </div>
+    <>
+      <Routes>
+        <Route path="/" element={<Layout />}>
+          <Route index element={<Home />} />
+          <Route path="cart" element={<Cart />} />
+        </Route>
+      </Routes>
+    </>
   );
 }

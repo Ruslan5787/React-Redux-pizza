@@ -4,7 +4,7 @@
   box-sizing: border-box;
 }
 
-h1 {
+h1, h3, h4 {
   margin: 0;
 }
 
@@ -12,6 +12,11 @@ button {
   background: transparent;
   border: none;
   cursor: pointer;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
 }
 
 body {
@@ -21,7 +26,7 @@ body {
   font-size: 16px;
   line-height: 19px;
   color: #cacaca;
-  padding: 50px 0;
+  padding: 40px 0;
 
   background: #ffdf8c;
 }

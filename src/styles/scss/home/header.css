@@ -1,4 +1,5 @@
 .header {
+  font-family: "Roboto", sans-serif;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -33,15 +34,6 @@
   color: #7b7b7b;
 }
 
-.shopping-cart {
-  background: #fe5f1e;
-  border-radius: 30px;
-  padding: 15px 23px;
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 19px;
-  color: #ffffff;
-}
 .shopping-cart-price {
   padding-right: 13px;
   position: relative;
@@ -65,7 +57,7 @@
   height: 18px;
   left: 7px;
   display: inline-block;
-  background: url("../../img/icons/shopping-cart.svg");
+  background: url("../../../img/main/icons/shopping-cart.svg");
   position: absolute;
 }
 

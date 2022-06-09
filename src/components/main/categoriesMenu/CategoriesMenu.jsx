@@ -1,4 +1,4 @@
-import "../../styles/scss/categories.scss";
+import "../../../styles/scss/home/categories.scss";
 
 import { Categories, Sorting } from "./index";
 
