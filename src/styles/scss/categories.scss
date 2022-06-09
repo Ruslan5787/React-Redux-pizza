@@ -1,4 +1,6 @@
 .categories {
+  font-family: 'Roboto', sans-serif;
+
   &-menu {
     display: flex;
     justify-content: space-between;
@@ -15,6 +17,7 @@
     max-width: 950px;
 
     &-btn {
+      font-family: 'Roboto', sans-serif;
       font-weight: 700;
       text-align: center;
       letter-spacing: 0.015em;
