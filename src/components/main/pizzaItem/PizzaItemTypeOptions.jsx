@@ -1,21 +1,24 @@
-import React, { useState } from "react";
+import React, {useState} from "react";
 import classNames from "classnames";
 
-import { generalInfo } from "../index";
+const generalInfo = {
+  dough: ["тонкое", "традиционное"],
+  sizes: [26, 30, 40],
+};
 
 export function PizzaItemTypeOptions(props) {
-  const { optionType, optionList } = props;
-  const [activeCategory, setActiveCategory] = useState(0);
+  const {optionType, optionList} = props;
+  const [activeCategory, setActiveCategory] = useState(optionList[0]);
 
   function handleClick(index, setCategory) {
     setCategory(index);
   }
 
   function getPizzaInfoButtons({
-    listInfo,
-    inStockList,
-    styleClass = "card-options__btn",
-    additionalText,
+                                 listInfo,
+                                 inStockList,
+                                 styleClass = "card-options__btn",
+                                 additionalText,
     category,
     setCategory,
   }) {
@@ -23,7 +26,7 @@ export function PizzaItemTypeOptions(props) {
       <button
         className={classNames(styleClass, {
           absent: !inStockList.includes(item),
-          active: index === category,
+          active: index === category || item === activeCategory,
         })}
         key={Math.random()}
         onClick={() => {
