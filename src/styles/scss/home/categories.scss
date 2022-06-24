@@ -14,6 +14,7 @@
   }
 
   &-types-pizza {
+    display: flex;
     margin-right: 25px;
     max-width: 950px;
 
@@ -38,14 +39,14 @@
       }
 
       &:hover {
-        background: #282828;
+        background: #fe5f1e;
         color: #fff;
       }
     }
   }
 
   &-btn--active {
-    background: #282828;
+    background: #fe5f1e;
     color: #fff;
   }
 }

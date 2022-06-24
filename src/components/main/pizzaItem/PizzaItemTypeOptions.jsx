@@ -1,4 +1,4 @@
-import React, {useState} from "react";
+import React, { useState } from "react";
 import classNames from "classnames";
 
 const generalInfo = {
@@ -7,18 +7,19 @@ const generalInfo = {
 };
 
 export function PizzaItemTypeOptions(props) {
-  const {optionType, optionList} = props;
+  const { optionType, optionList, setActiveOption } = props;
   const [activeCategory, setActiveCategory] = useState(optionList[0]);
 
   function handleClick(index, setCategory) {
     setCategory(index);
+    setActiveOption(optionList[index]);
   }
 
   function getPizzaInfoButtons({
-                                 listInfo,
-                                 inStockList,
-                                 styleClass = "card-options__btn",
-                                 additionalText,
+    listInfo,
+    inStockList,
+    styleClass = "card-options__btn",
+    additionalText,
     category,
     setCategory,
   }) {

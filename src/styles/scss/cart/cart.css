@@ -81,6 +81,9 @@
   color: #000000;
   margin: 0 12px 0 12px;
 }
+.cart__item-btn--img {
+  fill: #fe5f1e;
+}
 .cart__item-price {
   font-weight: 700;
   font-size: 22px;
@@ -165,9 +168,6 @@
   margin: 0 auto;
   background: #282828;
   color: #fff;
-}
-.cart__empty-btn--wrapper {
-  text-align-last: center;
 }
 
 /*# sourceMappingURL=cart.css.map */

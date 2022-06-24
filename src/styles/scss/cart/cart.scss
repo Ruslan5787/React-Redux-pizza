@@ -97,6 +97,12 @@
       }
     }
 
+    &-btn {
+      &--img {
+        fill: #fe5f1e;
+      }
+    }
+
     &-price {
       font-weight: 700;
       font-size: 22px;
@@ -199,10 +205,6 @@
       margin: 0 auto;
       background: #282828;
       color: #fff;
-
-      &--wrapper {
-        text-align-last: center;
-      }
     }
   }
 }

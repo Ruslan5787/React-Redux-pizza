@@ -15,7 +15,7 @@ export function Logo() {
       <div className="logo-text">
         <h1 className="logo-text__title">REACT PIZZA</h1>
         <div className="logo-text__subtitle">
-          самая вкусная пицца во вселенной
+          вкусная пицца во всей вселенной
         </div>
       </div>
     </div>

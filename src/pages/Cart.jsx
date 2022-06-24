@@ -1,13 +1,13 @@
 import React from "react";
 
 import "../styles/scss/cart/cart.scss";
-import { CartNotEmpty, CartEmpty } from "./index";
+import { FilledCart, EmptyCart } from "./index";
 
 export function Cart() {
   return (
     <main className="cart">
-      {/*<CartEmpty />*/}
-      <CartNotEmpty />
+      <FilledCart />
+      {/*<EmptyCart />*/}
     </main>
   );
 }

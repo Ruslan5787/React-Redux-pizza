@@ -1,23 +1,13 @@
-import React, { useEffect, useState } from "react";
-import { CategoriesMenu, Content } from "../components/main";
+import React from "react";
 
 import "../styles/scss/cart/cart.scss";
+import { CategoriesMenu, Content } from "../components/main";
 
 export function Home() {
-  const [pizzaItems, setPizzaItems] = useState([]);
-
-  useEffect(() => {
-    fetch("http://localhost:3000/database.json")
-      .then((response) => response.json())
-      .then((json) => {
-        setPizzaItems(json.pizzas);
-      });
-  }, []);
-
   return (
     <>
       <CategoriesMenu />
-      <Content pizzas={pizzaItems} />
+      <Content />
     </>
   );
 }

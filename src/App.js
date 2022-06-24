@@ -1,11 +1,11 @@
 import React from "react";
-import { Routes, Route } from "react-router-dom";
+import { Route, Routes } from "react-router-dom";
 
 import "./styles/scss/main.scss";
 
-import { Layout } from "./components/Layout";
 import { Home } from "./pages/Home";
 import { Cart } from "./pages/Cart";
+import { Layout } from "./components/Layout";
 
 export function App() {
   return (

@@ -1,21 +1,32 @@
 import React, { useRef, useState } from "react";
 
+import classNames from "classnames";
+
 import arrowDown from "../../../img/main/icons/arrow.svg";
 
 import "../../../styles/scss/smallComponents.scss";
-import classNames from "classnames";
+
+import { itemsModal } from "./constants";
 import { Modal } from "../../smallComponents/Modal";
+import { useDispatch, useSelector } from "react-redux";
+import { setSortBy } from "../../../redux/actions/filters";
+import { getActiveLabel } from "../../helpers";
 
 export function Sorting() {
-  const itemsModal = ["популярности", "цене", "алфавиту"];
-  const [isModalActive, setModalActive] = useState(false);
-  const [activeLabel, setActiveLabel] = useState("популярности");
   const sortRef = useRef();
+  const dispatch = useDispatch();
+  const activeLabelProperty = useSelector(({ filters }) => filters.sortBy);
+
+  const [isModalActive, setModalActive] = useState(false);
+
+  const activeLabel = itemsModal.find((item) => {
+    return getActiveLabel(item, activeLabelProperty);
+  });
 
   const handleClickSorting = () => {
     setModalActive(!isModalActive);
   };
-  //
+
   return (
     <div className="categories-menu__right" ref={sortRef}>
       <div className="sorting" onClick={handleClickSorting}>
@@ -27,14 +38,15 @@ export function Sorting() {
           alt="стрелка вниз"
         />
         <b className="sorting-text">Сортировка по:</b>
-        <span className="sorting-options">{activeLabel}</span>
+        <span className="sorting-options">{activeLabel.name}</span>
       </div>
       <Modal
-        items={itemsModal}
         isModalActive={isModalActive}
         setModalActive={setModalActive}
         sortElem={sortRef}
-        setActiveLabel={setActiveLabel}
+        workWithRedux={(optionType) =>
+          dispatch(setSortBy(optionType.main, optionType.order))
+        }
       />
     </div>
   );

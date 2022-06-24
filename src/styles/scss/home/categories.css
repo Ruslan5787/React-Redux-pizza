@@ -12,6 +12,7 @@
   position: relative;
 }
 .categories-types-pizza {
+  display: flex;
   margin-right: 25px;
   max-width: 950px;
 }
@@ -33,11 +34,11 @@
   margin-top: 10px;
 }
 .categories-types-pizza-btn:hover {
-  background: #282828;
+  background: #fe5f1e;
   color: #fff;
 }
 .categories-btn--active {
-  background: #282828;
+  background: #fe5f1e;
   color: #fff;
 }
 
