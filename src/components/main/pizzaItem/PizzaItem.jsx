@@ -1,10 +1,13 @@
-import React, { useState } from "react";
+import React, {useState} from "react";
 
-import { PizzaItemTypeOptions } from "./PizzaItemTypeOptions";
-import { addPizzaItemToCart } from "../../../redux/actions/cart";
+import {PizzaItemTypeOptions} from "./PizzaItemTypeOptions";
+import {addPizzaItemToCart} from "../../../redux/actions/cart";
+import {useSelector} from "react-redux";
 
 export function PizzaItem(props) {
-  const { id, imageUrl, name, types, sizes, price, addPizzaToCart } = props;
+  const {id, imageUrl, name, types, sizes, price, addPizzaToCart} = props;
+  const n = useSelector(({cart}) => cart.items);
+
   const [activeOptionDough, setActiveOptionDough] = useState(types[0]);
   const [activeOptionSize, setActiveOptionSize] = useState(sizes[0]);
 
@@ -54,7 +57,12 @@ export function PizzaItem(props) {
                 fill="#EB5A1E"
               />
             </svg>
-            Добавить<i className="card-options-buy__add-number">2</i>
+            Добавить
+            {n[id] && (
+              <i className="card-options-buy__add-number">
+                {Object.keys(n[id]).length}
+              </i>
+            )}
           </button>
         </div>
       </div>

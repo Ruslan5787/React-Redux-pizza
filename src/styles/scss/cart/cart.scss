@@ -32,9 +32,27 @@
 
       display: flex;
       align-items: center;
+      transition: all 0.3s;
 
-      &-img {
+      svg {
         margin-right: 7px;
+
+        path {
+          transition: all 0.3s;
+        }
+      }
+
+      &:hover {
+        color: #818181;
+
+        svg {
+          margin-right: 7px;
+
+          path {
+            stroke: #818181;
+            transition: all 0.3s;
+          }
+        }
       }
     }
   }
@@ -98,8 +116,34 @@
     }
 
     &-btn {
-      &--img {
-        fill: #fe5f1e;
+      &:hover {
+        svg {
+          path {
+            fill: #fff;
+            transition: 0.3s;
+          }
+
+          circle {
+            fill: #eb5a1e;
+            transition: 0.3s;
+          }
+        }
+      }
+
+      &-delete {
+        &:hover {
+          svg {
+            path {
+              fill: #fff;
+              transition: 0.3s;
+            }
+
+            circle {
+              fill: #d7d7d7;
+              transition: 0.3s;
+            }
+          }
+        }
       }
     }
 
