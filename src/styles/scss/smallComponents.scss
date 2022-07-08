@@ -1,3 +1,5 @@
+@import "./constants.scss";
+
 .modal {
   position: absolute;
   right: 0;
@@ -13,28 +15,28 @@
     padding: 10px 14px;
     display: block;
     cursor: pointer;
-    transition: all .2s;
+    transition: $main-transition;
 
     &--active {
-      font-weight: 700;
-      color: #fe5f1e;
+      font-weight: $main-font-weight-bold;
+      color: $main-color;
       background: rgba(254, 95, 30, 0.05);
     }
 
     &:hover {
-      color: #fe5f1e;
-      font-weight: 700;
+      color: $main-color;
+      font-weight: $main-font-weight-bold;
     }
   }
 }
 
 .main-button {
-  font-family: 'Roboto', sans-serif;
-  background: #fe5f1e;
-  border-radius: 30px;
+  font-family: $main-font-family;
+  background: $main-color;
+  border-radius: $border-radius-btn;
   padding: 15px 23px;
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 19px;
+  font-weight: $main-font-weight-bold;
+  font-size: $main-font-size;
+  line-height: $main-line-height;
   color: #ffffff;
 }

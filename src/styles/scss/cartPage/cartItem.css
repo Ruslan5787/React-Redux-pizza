@@ -1,0 +1,88 @@
+.cart__item {
+    display: flex;
+    flex: 50%;
+    justify-content: space-between;
+    align-items: center;
+    border-top: 1px solid #f4f4f4;
+    padding: 30px 0;
+}
+
+.cart__item-img {
+    width: 80px;
+    height: 80px;
+    margin-right: 15px;
+}
+
+.cart__item-info {
+    display: flex;
+    flex: 50%;
+    align-items: center;
+}
+
+.cart__item-title {
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 27px;
+    letter-spacing: 0.01em;
+    color: #000000;
+    margin-bottom: 3px;
+}
+
+.cart__item-subtitle {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 22px;
+    letter-spacing: 0.01em;
+    color: #8d8d8d;
+}
+
+.cart__item-right {
+    flex: 50%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.cart__item-counter {
+    display: flex;
+    align-items: center;
+}
+
+.cart__item-counter-number {
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 27px;
+    letter-spacing: 0.01em;
+    color: #000000;
+    margin: 0 12px 0 12px;
+}
+
+.cart__item-btn:hover svg path {
+    fill: #fff;
+    transition: 0.3s;
+}
+
+.cart__item-btn:hover svg circle {
+    fill: #eb5a1e;
+    transition: 0.3s;
+}
+
+.cart__item-btn.delete:hover svg path {
+    fill: #fff;
+    transition: 0.3s;
+}
+
+.cart__item-btn.delete:hover svg circle {
+    fill: #d7d7d7;
+    transition: 0.3s;
+}
+
+.cart__item-price {
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 27px;
+    letter-spacing: 0.01em;
+    color: #000000;
+}
+
+/*# sourceMappingURL=cartItem.css.map */

@@ -2,6 +2,7 @@ import React from "react";
 import { useSelector } from "react-redux";
 
 import "../../styles/scss/main.scss";
+
 import { Link } from "react-router-dom";
 
 export function ShoppingCartBtn() {

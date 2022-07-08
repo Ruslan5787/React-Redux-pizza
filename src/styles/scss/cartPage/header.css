@@ -1,0 +1,52 @@
+.cart__header {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 30px;
+}
+
+.cart__header-label {
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 39px;
+    letter-spacing: 0.01em;
+    color: #000000;
+    display: flex;
+    align-items: center;
+}
+
+.cart__header-label-img {
+    margin-right: 17px;
+}
+
+.cart__header-button {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    color: #b6b6b6;
+    display: flex;
+    align-items: center;
+    transition: all 0.3s;
+}
+
+.cart__header-button svg {
+    margin-right: 7px;
+}
+
+.cart__header-button svg path {
+    transition: all 0.3s;
+}
+
+.cart__header-button:hover {
+    color: #818181;
+}
+
+.cart__header-button:hover svg {
+    margin-right: 7px;
+}
+
+.cart__header-button:hover svg path {
+    stroke: #818181;
+    transition: all 0.3s;
+}
+
+/*# sourceMappingURL=header.css.map */

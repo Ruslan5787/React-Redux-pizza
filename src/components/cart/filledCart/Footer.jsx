@@ -1,11 +1,13 @@
 import React from "react";
-import {Link} from "react-router-dom";
+import { Link } from "react-router-dom";
+import { useSelector } from "react-redux";
 
-import {ReturnBackBtn} from "../../smallComponents/ReturnBackBtn";
-import {useSelector} from "react-redux";
+import "../../../styles/scss/cartPage/footer.scss";
+
+import { ReturnBackBtn } from "../../smallComponents/ReturnBackBtn";
 
 export function Footer() {
-  const {itemsCount, totalPrice} = useSelector(({cart}) => cart);
+  const { itemsCount, totalPrice } = useSelector(({ cart }) => cart);
 
   return (
     <div className="cart__footer">

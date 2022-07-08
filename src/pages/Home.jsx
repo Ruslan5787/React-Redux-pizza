@@ -1,7 +1,6 @@
 import React from "react";
 
-import "../styles/scss/cart/cart.scss";
-import { CategoriesMenu, Content } from "../components/main";
+import { CategoriesMenu, Content } from "../components/home";
 
 export function Home() {
   return (

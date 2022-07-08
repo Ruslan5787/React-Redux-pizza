@@ -1,0 +1,122 @@
+@import "../../constants.scss";
+
+.card-options {
+  background: $additional-color;
+  border-radius: 10px;
+  padding: 7px;
+  margin-bottom: 17px;
+
+  &__pizza {
+    display: flex;
+    justify-content: space-around;
+
+    &:first-child {
+      margin-bottom: 7px;
+    }
+  }
+
+  &__btn {
+    font-family: $main-font-family;
+    font-weight: $main-font-weight-bold;
+    font-size: 14px;
+    line-height: 17px;
+    text-align: center;
+    letter-spacing: 0.015em;
+    color: $additional-color-dark;
+
+    padding: 11px 0;
+    flex: 50%;
+
+    &.active {
+      background: #ffffff;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.04);
+      border-radius: 5px;
+    }
+
+    &.absent {
+      cursor: default;
+      opacity: 0.6;
+      pointer-events: none;
+    }
+  }
+
+  &-buy {
+    display: flex;
+    justify-content: space-between;
+
+    &__price {
+      font-weight: $main-font-weight-bold;
+      font-size: 22px;
+      line-height: 27px;
+      letter-spacing: 0.015em;
+      color: #000000;
+
+      margin-right: 15px;
+    }
+
+    &__add {
+      &-btn {
+        font-family: $main-font-family;
+        font-weight: $main-font-weight-bold;
+        font-size: 16px;
+        line-height: 19px;
+        color: $main-color;
+
+        position: relative;
+        padding: 13px 33px;
+        background: #ffffff;
+        border: 1px solid $main-color;
+        border-radius: $border-radius-btn;
+        transition: all 0.3s;
+
+        svg {
+          margin-right: 6px;
+          position: absolute;
+          top: 50%;
+          transform: translateY(-50%);
+          left: 16px;
+
+          path {
+            transition: $main-transition;
+          }
+        }
+
+        &:hover {
+          svg {
+            path {
+              fill: #fff;
+            }
+          }
+
+          background-color: $main-color;
+          color: #fff;
+
+          i {
+            background-color: #fff;
+            color: $main-color;
+          }
+        }
+      }
+
+      &-number {
+        font-weight: $main-font-weight-bold;
+        font-style: normal;
+        font-size: 13px;
+        line-height: 24px;
+        color: #fff;
+
+        width: 22px;
+        height: 22px;
+        display: inline-block;
+        position: absolute;
+
+        border-radius: $border-radius-btn;
+        background-color: $main-color;
+
+        right: 7px;
+        top: 50%;
+        transform: translateY(-50%);
+      }
+    }
+  }
+}

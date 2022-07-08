@@ -1,4 +1,4 @@
-import { Logo } from "./Logo";
+import { HeaderLogo } from "./HeaderLogo";
 import { ShoppingCartBtn } from "./ShoppingCartBtn";
 
-export { Logo, ShoppingCartBtn };
+export { HeaderLogo, ShoppingCartBtn };

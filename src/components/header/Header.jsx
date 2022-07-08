@@ -1,12 +1,12 @@
 import React from "react";
 
-import "../../styles/scss/home/header.scss";
-import { Logo, ShoppingCartBtn } from "./index";
+import "../../styles/scss/homePage/header.scss";
+import { HeaderLogo, ShoppingCartBtn } from "./index";
 
 export function Header() {
   return (
     <header className="header">
-      <Logo />
+      <HeaderLogo />
       <ShoppingCartBtn />
     </header>
   );

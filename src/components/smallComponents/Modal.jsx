@@ -3,18 +3,36 @@ import { useSelector } from "react-redux";
 
 import classNames from "classnames";
 
-import "../../styles/scss/home/sorting.scss";
-import { itemsModal } from "../main/categoriesMenu/constants";
+import "../../styles/scss/homePage/sorting.scss";
+import { itemsModalOptions } from "../home/constants";
+import { areTheValuesFromReduxTrue } from "../helpers";
 
 export function Modal(props) {
   const { isModalActive, setModalActive, sortElem, workWithRedux } = props;
   const activeLabelProperty = useSelector(({ filters }) => filters.sortBy);
 
+  const listModalOptions = itemsModalOptions.map((option) => (
+    <span
+      className={classNames("modal-options", {
+        "modal-options--active": areTheValuesFromReduxTrue(
+          option,
+          activeLabelProperty
+        ),
+      })}
+      key={Math.random()}
+      onClick={() => {
+        onSelectItem(option.type);
+      }}
+    >
+      {option.name}
+    </span>
+  ));
+
   useEffect(() => {
     document.body.addEventListener("click", handleOutsideClick);
   });
 
-  function onSelectItem(index, optionType) {
+  function onSelectItem(optionType) {
     setModalActive(false);
     workWithRedux(optionType);
   }
@@ -25,29 +43,5 @@ export function Modal(props) {
     }
   }
 
-  function ShowOptions() {
-    return itemsModal.map((option, index) => (
-      <span
-        className={classNames("modal-options", {
-          "modal-options--active":
-            option.type.main === activeLabelProperty.main &&
-            option.type.order === activeLabelProperty.order,
-        })}
-        key={`${option.name}_${index}`}
-        onClick={() => {
-          onSelectItem(index, option.type);
-        }}
-      >
-        {option.name}
-      </span>
-    ));
-  }
-
-  return (
-    isModalActive && (
-      <div className="modal">
-        <ShowOptions />
-      </div>
-    )
-  );
+  return isModalActive && <div className="modal">{listModalOptions}</div>;
 }

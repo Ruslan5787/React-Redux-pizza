@@ -1,0 +1,16 @@
+.content-title {
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 39px;
+    letter-spacing: 0.01em;
+    color: #000000;
+    margin-bottom: 35px;
+}
+
+.content-list {
+    display: grid;
+    grid-gap: 65px 35px;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+/*# sourceMappingURL=content.css.map */

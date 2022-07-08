@@ -5,6 +5,7 @@ const { SET_PIZZAS, SET_LOADED_FLAG } = actionTypes;
 const initialState = {
   items: [],
   isLoaded: false,
+  isMakeFetch: true,
 };
 
 export const pizzas = (state = initialState, action) => {

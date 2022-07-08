@@ -1,0 +1,24 @@
+.sorting {
+    font-family: "Roboto", sans-serif;
+    align-items: center;
+    cursor: pointer;
+}
+.sorting-img {
+  margin-right: 5px;
+}
+.sorting-img.rotated {
+  transform: rotate(180deg);
+}
+.sorting-text {
+  letter-spacing: 0.015em;
+  color: #2c2c2c;
+  margin-right: 8px;
+}
+.sorting-options {
+  font-size: 14px;
+  letter-spacing: 0.015em;
+  color: #fe5f1e;
+  border-bottom: 1px dashed #fe5f1e;
+}
+
+/*# sourceMappingURL=sorting.css.map */

@@ -2,7 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 
 import smailBadMood from "../../img/cartPage/smails/smail-bad-mood.jpg";
-import manWithCart from "../../img/cartPage/picture/man-with-shopping-cart.svg";
+import { ReactComponent as IconManWithCart } from "../../img/cartPage/picture/man-with-shopping-cart.svg";
 
 import { ReturnBackBtn } from "../smallComponents/ReturnBackBtn";
 
@@ -17,7 +17,7 @@ export function EmptyCart() {
         Вероятней всего, вы не заказывали ещё пиццу. Для того, чтобы заказать
         пиццу, перейди на главную страницу.
       </p>
-      <img className="cart__empty-main-img" src={manWithCart} alt="" />
+      <IconManWithCart className="cart__empty-main-img" />
       <Link to="/">
         <ReturnBackBtn />
       </Link>

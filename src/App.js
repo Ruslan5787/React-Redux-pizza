@@ -3,8 +3,7 @@ import { Route, Routes } from "react-router-dom";
 
 import "./styles/scss/main.scss";
 
-import { Home } from "./pages/Home";
-import { Cart } from "./pages/Cart";
+import { Cart, Home } from "./pages";
 import { Layout } from "./components/Layout";
 
 export function App() {

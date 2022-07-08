@@ -1,0 +1,54 @@
+@import "../constants.scss";
+
+.categories {
+  font-family: $main-font-family;
+
+  &-menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 32px;
+
+    &__right {
+      user-select: none;
+      position: relative;
+    }
+  }
+
+  &-types-pizza {
+    display: flex;
+    margin-right: 25px;
+    max-width: 950px;
+
+    &-btn {
+      font-family: $main-font-family;
+      font-weight: $main-font-weight-bold;
+      text-align: center;
+      letter-spacing: 0.015em;
+      color: $additional-color-dark;
+
+      padding: 14px 34px;
+      background: $additional-color;
+      border-radius: $border-radius-btn;
+      transition: $main-transition;
+
+      &:not(:last-child) {
+        margin-right: 9px;
+      }
+
+      &:nth-child(7n) {
+        margin-top: 10px;
+      }
+
+      &:hover {
+        background: $main-color;
+        color: #fff;
+      }
+    }
+  }
+
+  &-btn--active {
+    background: $main-color;
+    color: #fff;
+  }
+}

@@ -1,0 +1,34 @@
+@import "../constants.scss";
+
+.sorting {
+  font-family: $main-font-family;
+  align-items: center;
+  cursor: pointer;
+
+  &-img {
+    margin-right: 5px;
+
+    &.rotated {
+      transform: rotate(180deg);
+    }
+  }
+
+  &-text {
+    $main-font-weight-bold: 700;
+    $main-font-size: 14px;
+    $main-line-height: 19px;
+    letter-spacing: 0.015em;
+
+    color: $additional-color-dark;
+    margin-right: 8px;
+  }
+
+  &-options {
+    font-size: $main-font-size;
+    $main-line-height: 17px;
+    letter-spacing: 0.015em;
+    color: $main-color;
+
+    border-bottom: 1px dashed $main-color;
+  }
+}

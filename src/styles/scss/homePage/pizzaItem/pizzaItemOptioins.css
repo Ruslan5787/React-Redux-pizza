@@ -1,0 +1,98 @@
+.card-options {
+  background: #f3f3f3;
+  border-radius: 10px;
+  padding: 7px;
+  margin-bottom: 17px;
+}
+.card-options__pizza {
+  display: flex;
+  justify-content: space-around;
+}
+.card-options__pizza:first-child {
+  margin-bottom: 7px;
+}
+.card-options__btn {
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 17px;
+  text-align: center;
+  letter-spacing: 0.015em;
+  color: #2c2c2c;
+  padding: 11px 0;
+  flex: 50%;
+}
+.card-options__btn.active {
+  background: #ffffff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.04);
+  border-radius: 5px;
+}
+.card-options__btn.absent {
+  cursor: default;
+  opacity: 0.6;
+  pointer-events: none;
+}
+.card-options-buy {
+  display: flex;
+  justify-content: space-between;
+}
+.card-options-buy__price {
+  font-weight: 700;
+  font-size: 22px;
+  line-height: 27px;
+  letter-spacing: 0.015em;
+  color: #000000;
+  margin-right: 15px;
+}
+.card-options-buy__add-btn {
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 19px;
+  color: #fe5f1e;
+  position: relative;
+  padding: 13px 33px;
+  background: #ffffff;
+  border: 1px solid #fe5f1e;
+  border-radius: 30px;
+  transition: all 0.3s;
+}
+.card-options-buy__add-btn svg {
+  margin-right: 6px;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 16px;
+}
+.card-options-buy__add-btn svg path {
+  transition: all 0.3s;
+}
+.card-options-buy__add-btn:hover {
+  background-color: #fe5f1e;
+  color: #fff;
+}
+.card-options-buy__add-btn:hover svg path {
+  fill: #fff;
+}
+.card-options-buy__add-btn:hover i {
+  background-color: #fff;
+  color: #fe5f1e;
+}
+.card-options-buy__add-number {
+  font-weight: 700;
+  font-style: normal;
+  font-size: 13px;
+  line-height: 24px;
+  color: #fff;
+  width: 22px;
+  height: 22px;
+  display: inline-block;
+  position: absolute;
+  border-radius: 30px;
+  background-color: #fe5f1e;
+  right: 7px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+/*# sourceMappingURL=pizzaItemOptioins.css.map */

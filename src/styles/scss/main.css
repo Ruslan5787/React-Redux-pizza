@@ -20,14 +20,14 @@ a {
 }
 
 body {
-  font-family: Roboto, sans-serif;
-  font-style: normal;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 19px;
-  color: #cacaca;
-  padding: 40px 0;
-  background: #ffdf8c;
+    font-family: "Roboto", sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    color: #cacaca;
+    padding: 40px 0;
+    background: #ffdf8c;
 }
 
 .container {
@@ -39,4 +39,4 @@ body {
   border-radius: 10px;
 }
 
-/*# sourceMappingURL=main.css.map */
+/*# sourceMappingURL=homePage.css.map */
